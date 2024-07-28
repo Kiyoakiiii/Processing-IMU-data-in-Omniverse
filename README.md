@@ -77,7 +77,7 @@ Connect the MPU6050 and Jetson Orin Nano board according to the correct pins
 
 ![image](https://github.com/user-attachments/assets/21886143-6ed5-4611-b12f-2ca730a5747c)
 
-![image](https://github.com/user-attachments/assets/83427979-4349-4ecc-88c0-6c689f54cc2c)
+![image](https://github.com/user-attachments/assets/f82b1794-7d74-490d-95e2-35cf1a5a04aa)
 
 
 
