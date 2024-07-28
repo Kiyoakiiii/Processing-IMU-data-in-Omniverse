@@ -89,11 +89,14 @@ The cube movement application can be found in the ./source/cube_movement folder.
 
    3.Create or join a Live Collaboration Session named iot_session.
 
-   4.estimate roll pitch and yaw and calculate the current component of gravity acceleration in the xyz direction based on the transmitted acceleration and angular velocity data to eliminate the gravity acceleration.
+   4.Estimate roll pitch and yaw and calculate the current component of gravity acceleration in the xyz direction based on the transmitted acceleration and angular velocity data to eliminate the gravity acceleration.
 
    5.Use the processed acceleration and angular velocity data to calculate the displacement and rotation and write it to the cube's motion
 
 
+
+
+   
 In USD Composer or Kit, open omniverse://localhost/Users/<Username>/imu-data/Cube_imu_data_example/Cube_imu_data_example.usd and join the iot_session live collaboration session.
 
 Here's how-to join a live collaboration session. Press the live icon in the upper right corner and Click on Join Session
