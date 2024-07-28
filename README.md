@@ -75,11 +75,32 @@ You can use a development board (here we use Jetson Orin Nano) to read IMU data.
 
 Connect the MPU6050 and Jetson Orin Nano board according to the correct pins
 
-![image](https://github.com/user-attachments/assets/21886143-6ed5-4611-b12f-2ca730a5747c)
+![image](https://github.com/user-attachments/assets/88bb0fd6-ed0b-4097-afc1-fa7add2e1b86)
 
-![image](https://github.com/user-attachments/assets/f82b1794-7d74-490d-95e2-35cf1a5a04aa)
-
-
+Write a program on Jetson Orin Nano to read sensor data (Flask is used here to send and receive data)
+```
+> import time
+import board
+import busio
+import requests
+from adafruit_mpu6050 import MPU6050
+i2c = busio.I2C(board.SCL, board.SDA)
+mpu = MPU6050(i2c)
+while True:
+    accel_x, accel_y, accel_z = mpu.acceleration
+    gyro_x, gyro_y, gyro_z = mpu.gyro
+    data = {
+        'accel_x': round(accel_x, 2),
+        'accel_y': round(accel_y, 2),
+        'accel_z': round(accel_z, 2),
+        'gyro_x': round(gyro_x, 2),
+        'gyro_y': round(gyro_y, 2),
+        'gyro_z': round(gyro_z, 2),
+    }
+    response = requests.post("http://"Your IP address":5000/imu", json=data)
+    print("Sent: {}, Received: {}".format(data, response.status_code))
+    time.sleep(The time interval for sending data)
+```
 
 ### Cube movement
 
