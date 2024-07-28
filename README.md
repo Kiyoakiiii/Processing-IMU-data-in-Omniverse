@@ -94,6 +94,8 @@ The cube movement application can be found in the ./source/cube_movement folder.
 
 6.Use the processed acceleration and angular velocity data to calculate the displacement and rotation and write it to the cube's motion
 
+
+
 In USD Composer or Kit, open omniverse://localhost/Users/<Username>/imu-data/Cube_imu_data_example/Cube_imu_data_example.usd and join the iot_session live collaboration session.
 
 Here's how-to join a live collaboration session. Press the live icon in the upper right corner and Click on Join Session
