@@ -69,7 +69,19 @@ Linux
 ```
 
 
-### cube movement
+# Jetson Orin Nano
+
+You can use a development board (here we use Jetson Orin Nano) to read IMU data. Here we use the MPU6050 sensor to read the acceleration and angular velocity in the xyz direction.
+
+Connect the MPU6050 and Jetson Orin Nano board according to the correct pins
+
+![image](https://github.com/user-attachments/assets/21886143-6ed5-4611-b12f-2ca730a5747c)
+
+![image](https://github.com/user-attachments/assets/83427979-4349-4ecc-88c0-6c689f54cc2c)
+
+
+
+### Cube movement
 
 To execute the application run the following:
 ```
@@ -79,6 +91,8 @@ To execute the application run the following:
     -s <nucleus server> (optional default: localhost)
 ```
 
+Username and password are of the Nucleus instance (running on local workstation or on cloud) you will be connecting to for your projects.
 
-Username and password are of the Nucleus instance (running on local workstation or on cloud) you will be connecting to for your IoT projects.
+
+
 
