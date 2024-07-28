@@ -83,10 +83,15 @@ Username and password are of the Nucleus instance (running on local workstation 
 The cube movement application can be found in the ./source/cube_movement folder. It will perform the following:
 
 1.Initialize the stage
+
 2.Open a connection to Nucleus.
+
 3.Create a cube to omniverse://localhost/Users/<Username>/imu-data/Cube_imu_data_example/
+
 4.Create or join a Live Collaboration Session named iot_session.
+
 5.estimate roll pitch and yaw and calculate the current component of gravity acceleration in the xyz direction based on the transmitted acceleration and angular velocity data to eliminate the gravity acceleration.
+
 6.Use the processed acceleration and angular velocity data to calculate the displacement and rotation and write it to the cube's motion
 
 In USD Composer or Kit, open omniverse://localhost/Users/<Username>/imu-data/Cube_imu_data_example/Cube_imu_data_example.usd and join the iot_session live collaboration session.
