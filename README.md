@@ -90,10 +90,14 @@ Select iot-session from the drop down to join the already created live session.
 
 ![屏幕截图 2024-07-28 163617](https://github.com/user-attachments/assets/3b4fd994-1946-495d-85d8-d97e837a0911)
 
+After joining the session, you can see the created blocks
+
+![image](https://github.com/user-attachments/assets/ddd69fee-40e0-40dd-9a5f-bc2a057431a4)
+
 
 # Sensor side
 
-You can use a development board (here we use Jetson Orin Nano) to read IMU data. Here we use the MPU6050 sensor to read the acceleration and angular velocity in the xyz direction.
+You can use a development board (here we use Jetson Orin Nano) to read IMU data.And we use the MPU6050 sensor to read the acceleration and angular velocity in the xyz direction.
 
 Connect the MPU6050 and Jetson Orin Nano board according to the correct pins
 
