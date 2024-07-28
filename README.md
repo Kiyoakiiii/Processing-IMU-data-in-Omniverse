@@ -83,15 +83,15 @@ Username and password are of the Nucleus instance (running on local workstation 
 The cube movement application can be found in the ./source/cube_movement folder. It will perform the following:
 
 
-   1. Open a connection to Nucleus.
+      + Open a connection to Nucleus.
 
-   2. Create a cube to omniverse://localhost/Users/<Username>/imu-data/Cube_imu_data_example/
+      + Create a cube to omniverse://localhost/Users/<Username>/imu-data/Cube_imu_data_example/
 
-   3. Create or join a Live Collaboration Session named iot_session.
+      + Create or join a Live Collaboration Session named iot_session.
 
-   4. Estimate roll pitch and yaw and calculate the current component of gravity acceleration in the xyz direction based on the transmitted acceleration and angular velocity data to eliminate the gravity acceleration.
+      + Estimate roll pitch and yaw and calculate the current component of gravity acceleration in the xyz direction based on the transmitted acceleration and angular velocity data to eliminate the gravity acceleration.
 
-   5. Use the processed acceleration and angular velocity data to calculate the displacement and rotation and write it to the cube's motion
+      + Use the processed acceleration and angular velocity data to calculate the displacement and rotation and write it to the cube's motion
 
 
 
