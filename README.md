@@ -68,8 +68,30 @@ Linux
 > ./link_app.sh --path "~/.local/share/ov/pkg/create-2023.2.0"
 ```
 
+# Windows side
 
-# Jetson Orin Nano
+To execute the application run the following:
+```
+> python source/cube_movement/run_app.py
+    -u <user name>
+    -p <password>
+    -s <nucleus server> (optional default: localhost)
+```
+
+Username and password are of the Nucleus instance (running on local workstation or on cloud) you will be connecting to for your projects.
+
+In USD Composer or Kit, open omniverse://localhost/Users/<Username>/imu-data/Cube_imu_data_example/Cube_imu_data_example.usd and join the iot_session live collaboration session.
+
+Here's how-to join a live collaboration session. Press the live icon in the upper right corner and Click on Join Session
+
+![屏幕截图 2024-07-28 163601](https://github.com/user-attachments/assets/07399f03-1268-428b-8e89-ce990acc9756)
+
+Select iot-session from the drop down to join the already created live session.
+
+![屏幕截图 2024-07-28 163617](https://github.com/user-attachments/assets/3b4fd994-1946-495d-85d8-d97e837a0911)
+
+
+# Sensor side
 
 You can use a development board (here we use Jetson Orin Nano) to read IMU data. Here we use the MPU6050 sensor to read the acceleration and angular velocity in the xyz direction.
 
@@ -102,17 +124,7 @@ while True:
     time.sleep(The time interval for sending data)
 ```
 
-### Cube movement
-
-To execute the application run the following:
-```
-> python source/cube_movement/run_app.py
-    -u <user name>
-    -p <password>
-    -s <nucleus server> (optional default: localhost)
-```
-
-Username and password are of the Nucleus instance (running on local workstation or on cloud) you will be connecting to for your projects.
+After running the code on the Windows side, run this code on the development board to establish a connection and transmit IMU data to Windows.And the generated blocks will move according to the motion data of the sensor.
 
 
 
